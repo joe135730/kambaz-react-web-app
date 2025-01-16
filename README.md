@@ -48,3 +48,13 @@ export default tseslint.config({
   },
 })
 ```
+### Required Libraries
+```
+npm install react-router
+npm install react-router-dom
+```
+### To run the application
+```
+npm install
+npm run dev
+```
