@@ -297,6 +297,10 @@ export default function Lab1() {
           <br />
         </form>
       </div>
+
+        <div>
+          
+        </div>
     </div>
   );
 }
