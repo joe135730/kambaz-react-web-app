@@ -1,10 +1,12 @@
 export default function AssignmentEditor() {
   return (
     <div id="wd-assignments-editor">
+      {/* Assignment Name */}
       <label htmlFor="wd-name">Assignment Name</label> <br />
       <input id="wd-name" value="A1 - ENV + HTML" />
       <br />
       <br />
+      {/* Description */}
       <textarea id="wd-description" cols={50} rows={10}>
         The assignment is available online Submit a link to the landing page of
         your Web application running on Netfly. The landing page should include
@@ -12,8 +14,9 @@ export default function AssignmentEditor() {
         application Links to all relevant source code repositories The Kanbas
         application should include a link to navigate back to the landing page.
       </textarea>
-      <br />
+
       <table>
+        {/* Points */}
         <tr>
           <td align="right" valign="top">
             <label htmlFor="wd-points">Points</label>
@@ -22,6 +25,8 @@ export default function AssignmentEditor() {
             <input id="wd-points" value={100} />
           </td>
         </tr>
+        <br />
+        {/* Assignment Griup */}
         <tr>
           <td align="right" valign="top">
             <label htmlFor="wd-points">Assignment Group</label>
@@ -38,6 +43,8 @@ export default function AssignmentEditor() {
             </select>
           </td>
         </tr>
+        <br />
+        {/* Display Grade as */}
         <tr>
           <td align="right" valign="top">
             <label htmlFor="wd-points">Display Grade as</label>
@@ -54,6 +61,8 @@ export default function AssignmentEditor() {
             </select>
           </td>
         </tr>
+        <br />
+        {/* Submission Type */}
         <tr>
           <td align="right" valign="top">
             <label htmlFor="wd-points">Submission Type</label>
@@ -68,8 +77,13 @@ export default function AssignmentEditor() {
               </option>
               <option value="FANTASY">Fantasy</option>
             </select>
-            <br />
-            <br />
+          </td>
+        </tr>
+        <br />
+        {/* Online Entry Options */}
+        <tr>
+          <td></td>
+          <td>
             <label>Online Entry Options</label>
             <br />
             <input
@@ -106,30 +120,62 @@ export default function AssignmentEditor() {
               id="wd-chkbox-fileUploads"
             />
             <label htmlFor="wd-chkbox-fantasy">File Uploads</label>
-            <br />
-            <br />
+          </td>
+        </tr>
+        <br />
+        {/* Assign Assign to */}
+        <tr>
+          <td></td>
+          <td align="left" valign="top">
             <label htmlFor="wd-points">Assign Assign to</label>
-            <br />
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>
             <input id="wd-assign" value="Everyone" />
-            <br />
-            <br />
+          </td>
+        </tr>
+        <br />
+        {/* Due */}
+        <tr>
+          <td></td>
+          <td>
             <label htmlFor="wd-points">Due</label>
-            <br />
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>
             <input type="date" value="2000-01-21" id="wd-text-fields-dueDate" />
-            <br />
-            <br />
-
+          </td>
+        </tr>
+        <br />
+        {/* Available from, Until*/}
+        <tr>
+          <td></td>
+          <td>
             <label htmlFor="wd-availableFrom">Available from</label>
+          </td>
+          <td>
             <label htmlFor="wd-availableFrom">Until</label>
-            <br />
+          </td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>
             <input type="date" value="2000-01-21" id="wd-text-fields-dueDate" />
+          </td>
+          <td>
             <input type="date" value="2000-01-21" id="wd-text-fields-dueDate" />
-            <hr />
-            <button>Cancel</button>
-            <button>Save</button>
           </td>
         </tr>
       </table>
+      <hr />
+      <div style={{ textAlign: "right" }}>
+        <button>Cancel</button>
+        <button style={{ marginLeft: "10px" }}>Save</button>
+      </div>
     </div>
   );
 }
