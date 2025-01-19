@@ -1,4 +1,3 @@
-import { Link } from "react-router";
 export default function Labs() {
     return (
       <div id="wd-labs">
