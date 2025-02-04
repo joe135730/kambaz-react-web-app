@@ -1,39 +1,65 @@
 import { Link } from "react-router-dom";
 export default function CourseNavigation() {
   return (
-    <div id="wd-courses-navigation">
-      <Link to="/Kambaz/Courses/1234/Home" id="wd-course-home-link">
+    <div id="wd-courses-navigation" className="wd list-group fs-5 rounded-0">
+      <Link
+        to="/Kambaz/Courses/1234/Home"
+        id="wd-course-home-link"
+        className="list-group-item active border border-0"
+      >
         Home
       </Link>
-      <br />
-      <Link to="/Kambaz/Courses/1234/Modules" id="wd-course-modules-link">
+      <Link
+        to="/Kambaz/Courses/1234/Modules"
+        className="list-group-item text-danger border border-0"
+        id="wd-course-modules-link"
+      >
         Modules
       </Link>
-      <br />
-      <Link to="/Kambaz/Courses/1234/Piazza" id="wd-course-piazza-link">
+      <Link
+        target="_blank"
+        to="https://northeastern.instructure.com/courses/206195/external_tools/289"
+        className="list-group-item text-danger border border-0"
+        id="wd-course-piazza-link"
+      >
         Piazza
       </Link>
-      <br />
-      <Link to="/Kambaz/Courses/1234/Zoom" id="wd-course-zoom-link">
+      <Link
+        target="_blank"
+        to="https://applications.zoom.us/lti/rich"
+        className="list-group-item text-danger border border-0"
+        id="wd-course-zoom-link"
+      >
         Zoom
       </Link>
-      <br />
-      <Link to="/Kambaz/Courses/1234/Assignments" id="wd-course-quizzes-link">
+      <Link
+        to="/Kambaz/Courses/1234/Assignments"
+        className="list-group-item text-danger border border-0"
+        id="wd-course-quizzes-link"
+      >
         Assignments
       </Link>
-      <br />
-      <Link to="/Kambaz/Courses/1234/Quizzes" id="wd-course-assignments-link">
+      <Link
+        to="/Kambaz/Courses/1234/Quizzes"
+        className="list-group-item text-danger border border-0"
+        id="wd-course-assignments-link"
+      >
         Quizzes
       </Link>
-      <br />
-      <Link to="/Kambaz/Courses/1234/Grades" id="wd-course-grades-link">
+      <Link
+        to="/Kambaz/Courses/1234/Grades"
+        className="list-group-item text-danger border border-0"
+        id="wd-course-grades-link"
+      >
         Grades
       </Link>
-      <br />
-      <Link to="/Kambaz/People" id="wd-course-people-link">
+      <Link
+        to="/Kambaz/Courses/:cid/People"
+        className="list-group-item text-danger border border-0"
+        id="wd-course-people-link"
+      >
         People
       </Link>
-      <br />
     </div>
   );
 }

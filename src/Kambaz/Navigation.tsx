@@ -27,7 +27,6 @@ export default function KambazNavigation() {
         <FaRegCircleUser className="fs-1 text text-white" />
         Account{" "}
       </Link>
-      <br />
       <Link
         to="/Kambaz/Dashboard"
         id="wd-dashboard-link"
