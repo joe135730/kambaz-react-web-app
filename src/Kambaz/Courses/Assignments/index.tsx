@@ -1,6 +1,14 @@
+import AssignmentsControls from "./AssignmentsControls";
+
 export default function Assignments() {
   return (
-    <div id="wd-assignments">
+    <div>
+      <AssignmentsControls/>
+    </div>
+  );
+}
+
+     {/* <div id="wd-assignments">
       <input placeholder="Search for Assignments" id="wd-search-assignment" />
       <button id="wd-add-assignment-group">+ Group</button>
       <button id="wd-add-assignment">+ Assignment</button>
@@ -42,6 +50,5 @@ export default function Assignments() {
           <b>Due</b> May 27 at 11:59pm |100 pts
         </li>
       </ul>
-    </div>
-  );
-}
+    </div>  */}
+
