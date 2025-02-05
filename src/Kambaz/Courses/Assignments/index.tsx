@@ -1,7 +1,6 @@
 import { ListGroup } from "react-bootstrap";
 import { BsGripVertical } from "react-icons/bs";
 import LessonControlButtons from "../Modules/LessonControlButtons";
-import ModuleControlButtons from "../Modules/ModuleControlButtons";
 import AssignmentsControls from "./AssignmentsControls";
 import AssignmentsControlsButtons from "./AssignmentsControlsButtons";
 import { LuNotebookPen } from "react-icons/lu";
