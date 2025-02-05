@@ -22,7 +22,8 @@ export default function CourseNavigation() {
         Modules
       </NavLink>
       <NavLink
-        to="/Kambaz/Courses/1234/Piazza"
+        target="_blank"
+        to="https://northeastern.instructure.com/courses/206195/external_tools/289"
         id="wd-course-piazza-link"
         className={({ isActive }) =>
           `list-group-item border-0 ${isActive ? "border-start border-4 border-black" : ""} text-danger`
@@ -31,7 +32,8 @@ export default function CourseNavigation() {
         Piazza
       </NavLink>
       <NavLink
-        to="/Kambaz/Courses/1234/Zoom"
+        target="_blank"
+        to="https://applications.zoom.us/lti/rich"
         id="wd-course-zoom-link"
         className={({ isActive }) =>
           `list-group-item border-0 ${isActive ? "border-start border-4 border-black" : ""} text-danger`
@@ -49,7 +51,8 @@ export default function CourseNavigation() {
         Assignments
       </NavLink>
       <NavLink
-        to="/Kambaz/Courses/1234/Quizzes"
+        target="_blank"
+        to="https://northeastern.instructure.com/courses/206195/quizzes"
         id="wd-course-quizzes-link"
         className={({ isActive }) =>
           `list-group-item border-0 ${isActive ? "border-start border-4 border-black" : ""} text-danger`
@@ -58,7 +61,8 @@ export default function CourseNavigation() {
         Quizzes
       </NavLink>
       <NavLink
-        to="/Kambaz/Courses/1234/Grades"
+        target="_blank"
+        to="https://northeastern.instructure.com/courses/206195/grades"
         id="wd-course-grades-link"
         className={({ isActive }) =>
           `list-group-item border-0 ${isActive ? "border-start border-4 border-black" : ""} text-danger`

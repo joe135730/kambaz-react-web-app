@@ -1,6 +1,8 @@
 import { FaPlus } from "react-icons/fa6";
 import GreenCheckmark from "./GreenCheckmark";
 import { Button, Dropdown } from "react-bootstrap";
+import { IoBanOutline } from "react-icons/io5";
+
 export default function ModulesControls() {
   return (
     <div id="wd-modules-controls" className="text-nowrap">
@@ -18,9 +20,6 @@ export default function ModulesControls() {
           <GreenCheckmark /> Publish All
         </Dropdown.Toggle>
         <Dropdown.Menu>
-          <Dropdown.Item id="wd-publish-all">
-            <GreenCheckmark /> Publish All
-          </Dropdown.Item>
           <Dropdown.Item id="wd-publish-all-modules-and-items">
             <GreenCheckmark /> Publish all modules and items
           </Dropdown.Item>
@@ -28,13 +27,29 @@ export default function ModulesControls() {
             <GreenCheckmark /> Publish modules only
           </Dropdown.Item>
           <Dropdown.Item id="wd-publish-modules-only">
-            <GreenCheckmark /> Unpublish all modules and items
+            <IoBanOutline className="text-danger"/> Unpublish all modules and items
           </Dropdown.Item>
           <Dropdown.Item id="wd-publish-modules-only">
-            <GreenCheckmark /> Unpublish all modules only
+            <IoBanOutline className="text-danger"/> Unpublish all modules only
           </Dropdown.Item>
         </Dropdown.Menu>
       </Dropdown>
+      <Button
+        variant="secondary"
+        size="lg"
+        className="me-1 float-end"
+        id="wd-add-module-btn"
+      >
+        View Progress
+      </Button>
+      <Button
+        variant="secondary"
+        size="lg"
+        className="me-1 float-end"
+        id="wd-add-module-btn"
+      >
+        Collapse All
+      </Button>
     </div>
   );
 }

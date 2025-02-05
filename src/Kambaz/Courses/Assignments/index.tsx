@@ -28,9 +28,9 @@ export default function Assignments() {
                       <div>
                         <a
                           href="#/Kambaz/Courses/1234/Assignments/123"
-                          className="wd-assignment-link"
+                          className="wd-assignment-link fw-bold"
                         >
-                          A1 - CSS + BOOTSTRAP
+                          A1
                         </a>{" "}
                       </div>
                       <div>
@@ -38,7 +38,7 @@ export default function Assignments() {
                           <span className="text-danger">
                             Multiple Modules |
                           </span>
-                          <span className="text-dark">
+                          <span className="text-dark fw-bold">
                             {" "}
                             Not available until
                           </span>{" "}
@@ -68,9 +68,9 @@ export default function Assignments() {
                       <div>
                         <a
                           href="#/Kambaz/Courses/1234/Assignments/123"
-                          className="wd-assignment-link"
+                          className="wd-assignment-link fw-bold"
                         >
-                          A2 - CSS + BOOTSTRAP
+                          A2
                         </a>{" "}
                       </div>
                       <div>
@@ -78,7 +78,7 @@ export default function Assignments() {
                           <span className="text-danger">
                             Multiple Modules |
                           </span>
-                          <span className="text-dark">
+                          <span className="text-dark fw-bold">
                             {" "}
                             Not available until
                           </span>{" "}
@@ -108,9 +108,9 @@ export default function Assignments() {
                       <div>
                         <a
                           href="#/Kambaz/Courses/1234/Assignments/123"
-                          className="wd-assignment-link"
+                          className="wd-assignment-link fw-bold"
                         >
-                          A3 - CSS + BOOTSTRAP
+                          A3
                         </a>{" "}
                       </div>
                       <div>
@@ -118,7 +118,7 @@ export default function Assignments() {
                           <span className="text-danger">
                             Multiple Modules |
                           </span>
-                          <span className="text-dark">
+                          <span className="text-dark fw-bold">
                             {" "}
                             Not available until
                           </span>{" "}

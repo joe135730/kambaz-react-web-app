@@ -21,6 +21,10 @@ export default function Home() {
       <div className="d-none d-xl-block">
         <CourseStatus />
       </div>
+
+
     </div>
+
+    
   );
 }

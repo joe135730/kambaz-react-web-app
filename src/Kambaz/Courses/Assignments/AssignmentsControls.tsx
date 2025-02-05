@@ -14,7 +14,7 @@ export default function AssignmentsControls() {
             <HiMagnifyingGlass />
           </InputGroup.Text>
           <Form.Control
-            placeholder="Username"
+            placeholder="Search for Assignments"
             aria-label="Username"
             aria-describedby="basic-addon1"
             style={{

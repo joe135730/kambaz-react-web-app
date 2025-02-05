@@ -7,14 +7,14 @@ export default function AssignmentEditor() {
         <Form>
           {/* Assignment Name */}
           <Form.Group>
-            <Form.Group className="mb-3 w-75" controlId="formBasicEmail">
+            <Form.Group className="mb-3 w-lg-75" controlId="formBasicEmail">
               <Form.Label>Assignment Name</Form.Label>
               <Form.Control type="text" placeholder="Enter Assignment Name" />
             </Form.Group>
           </Form.Group>
           {/* Description */}
           <Form.Group
-            className="mb-3 w-75"
+            className="mb-3 w-lg-75"
             controlId="exampleForm.ControlTextarea1"
           >
             <Form.Label>Description</Form.Label>
@@ -25,7 +25,7 @@ export default function AssignmentEditor() {
             />
           </Form.Group>
           {/* Points */}
-          <Form.Group className="mb-3 w-75">
+          <Form.Group className="mb-3 w-lg-75">
             <Form.Group className="d-flex justify-content-end gap-2 ">
               <Form.Label className="mb-0 d-flex align-items-center">
                 Points
@@ -38,33 +38,34 @@ export default function AssignmentEditor() {
             </Form.Group>
           </Form.Group>
           {/* Assignment Group */}
-          <Form.Group className="mb-3 w-75">
+          <Form.Group className="mb-3 w-lg-75">
             <Form.Group className="d-flex justify-content-end gap-2 ">
               <Form.Label className="mb-0 d-flex align-items-center">
                 Assignment Group
               </Form.Label>
               <Form.Select className="w-65" aria-label="Default select example">
-                <option>Open this select menu</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
+                {/* <option>Open this select menu</option> */}
+                <option value="1">Assignment</option>
+                <option value="2">Quiz</option>
+                <option value="3">Exam</option>
+                <option value="4">Project</option>
               </Form.Select>
             </Form.Group>
           </Form.Group>
           {/* Display Grade as */}
-          <Form.Group className="mb-3 w-75">
+          <Form.Group className="mb-3 w-lg-75">
             <Form.Group className="d-flex justify-content-end gap-2">
               <Form.Label className="mb-0 d-flex align-items-center">Display Grade as</Form.Label>
               <Form.Select className="w-65" aria-label="Default select example">
                 <option>Open this select menu</option>
-                <option value="1">One</option>
-                <option value="2">Two</option>
-                <option value="3">Three</option>
+                <option value="1">Percentage</option>
+                <option value="2">Complete/Incomplete</option>
+                <option value="3">Letter Grade</option>
               </Form.Select>
             </Form.Group>
           </Form.Group>
           {/* Submission Type */}
-          <Form.Group className="mb-3 w-75">
+          <Form.Group className="mb-3 w-lg-75">
             <Form.Group className="d-flex justify-content-end gap-2">
               <Form.Label className="mb-0 d-flex align-items-top">Submission Type</Form.Label>
               <div className="border border-dark rounded flex-column w-65 p-4">
@@ -115,7 +116,7 @@ export default function AssignmentEditor() {
             </Form.Group>
           </Form.Group>
           {/* Assign */}
-          <Form.Group className="mb-3 w-75">
+          <Form.Group className="mb-3 w-lg-75">
             <Form.Group className="d-flex justify-content-end gap-2">
               <Form.Label className="mb-0 d-flex align-items-">Assign</Form.Label>
               <div className="border border-dark rounded flex-column w-65 p-4">
