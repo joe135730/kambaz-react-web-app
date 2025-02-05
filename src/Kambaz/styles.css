@@ -39,3 +39,13 @@ a:hover {
 .w-65{
   width: 65%;
 }
+@media (min-width: 1200px) {
+  .w-xl-75 {
+    width: 75% !important;
+  }
+  input[type="datetime-local"] {
+    width: 100%;
+    max-width: 100%;
+  }
+}
+
