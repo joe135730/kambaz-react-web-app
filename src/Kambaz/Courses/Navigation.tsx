@@ -1,65 +1,80 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+
 export default function CourseNavigation() {
   return (
     <div id="wd-courses-navigation" className="wd list-group fs-5 rounded-0">
-      <Link
+      <NavLink
         to="/Kambaz/Courses/1234/Home"
         id="wd-course-home-link"
-        className="list-group-item active border border-0"
+        className={({ isActive }) =>
+          `list-group-item border-0 ${isActive ? "border-start border-4 border-black" : ""} text-danger`
+        }
       >
         Home
-      </Link>
-      <Link
+      </NavLink>
+      <NavLink
         to="/Kambaz/Courses/1234/Modules"
-        className="list-group-item text-danger border border-0"
         id="wd-course-modules-link"
+        className={({ isActive }) =>
+          `list-group-item border-0 ${isActive ? "border-start border-4 border-black" : ""} text-danger`
+        }
       >
         Modules
-      </Link>
-      <Link
-        target="_blank"
-        to="https://northeastern.instructure.com/courses/206195/external_tools/289"
-        className="list-group-item text-danger border border-0"
+      </NavLink>
+      <NavLink
+        to="/Kambaz/Courses/1234/Piazza"
         id="wd-course-piazza-link"
+        className={({ isActive }) =>
+          `list-group-item border-0 ${isActive ? "border-start border-4 border-black" : ""} text-danger`
+        }
       >
         Piazza
-      </Link>
-      <Link
-        target="_blank"
-        to="https://applications.zoom.us/lti/rich"
-        className="list-group-item text-danger border border-0"
+      </NavLink>
+      <NavLink
+        to="/Kambaz/Courses/1234/Zoom"
         id="wd-course-zoom-link"
+        className={({ isActive }) =>
+          `list-group-item border-0 ${isActive ? "border-start border-4 border-black" : ""} text-danger`
+        }
       >
         Zoom
-      </Link>
-      <Link
+      </NavLink>
+      <NavLink
         to="/Kambaz/Courses/1234/Assignments"
-        className="list-group-item text-danger border border-0"
-        id="wd-course-quizzes-link"
+        id="wd-course-assignments-link"
+        className={({ isActive }) =>
+          `list-group-item border-0 ${isActive ? "border-start border-4 border-black" : ""} text-danger`
+        }
       >
         Assignments
-      </Link>
-      <Link
+      </NavLink>
+      <NavLink
         to="/Kambaz/Courses/1234/Quizzes"
-        className="list-group-item text-danger border border-0"
-        id="wd-course-assignments-link"
+        id="wd-course-quizzes-link"
+        className={({ isActive }) =>
+          `list-group-item border-0 ${isActive ? "border-start border-4 border-black" : ""} text-danger`
+        }
       >
         Quizzes
-      </Link>
-      <Link
+      </NavLink>
+      <NavLink
         to="/Kambaz/Courses/1234/Grades"
-        className="list-group-item text-danger border border-0"
         id="wd-course-grades-link"
+        className={({ isActive }) =>
+          `list-group-item border-0 ${isActive ? "border-start border-4 border-black" : ""} text-danger`
+        }
       >
         Grades
-      </Link>
-      <Link
+      </NavLink>
+      <NavLink
         to="/Kambaz/Courses/:cid/People"
-        className="list-group-item text-danger border border-0"
         id="wd-course-people-link"
+        className={({ isActive }) =>
+          `list-group-item border-0 ${isActive ? "border-start border-4 border-black" : ""} text-danger`
+        }
       >
         People
-      </Link>
+      </NavLink>
     </div>
   );
 }

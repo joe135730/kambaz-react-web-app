@@ -1,8 +1,9 @@
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { AiOutlineDashboard } from "react-icons/ai";
-import { IoCalendarOutline } from "react-icons/io5";
+import { IoCalendarOutline, IoSettingsOutline } from "react-icons/io5";
 import { LiaBookSolid, LiaCogSolid } from "react-icons/lia";
 import { FaInbox, FaRegCircleUser } from "react-icons/fa6";
+import { FaCalendarAlt } from "react-icons/fa";
 
 export default function KambazNavigation() {
   return (
@@ -19,33 +20,78 @@ export default function KambazNavigation() {
       >
         <img src="/images/NEU.png" width="50x" height="50PX" />
       </a>
-      <Link
+
+      <NavLink
         to="/Kambaz/Account"
         id="wd-account-link"
-        className="list-group-item text-center border-0 bg-black text-white"
+        className={({ isActive }) =>
+          `list-group-item text-center border-0 ${isActive ? "bg-white text-danger" : "bg-black text-white"}`
+        }
       >
-        <FaRegCircleUser className="fs-1 text text-white" />
-        Account{" "}
-      </Link>
-      <Link
+        <FaRegCircleUser className="fs-1 text-danger" />
+        <br />
+        Account
+      </NavLink>
+
+      <NavLink
         to="/Kambaz/Dashboard"
         id="wd-dashboard-link"
-        className="list-group-item text-center border-0
-               bg-white text-danger"
+        className={({ isActive }) =>
+          `list-group-item text-center border-0 ${isActive ? "bg-white text-danger" : "bg-black text-white"}`
+        }
       >
         <AiOutlineDashboard className="fs-1 text-danger" />
-        Dashboard{" "}
-      </Link>
-      <Link
-        to="/Kambaz/Dashboard"
+        <br />
+        Dashboard
+      </NavLink>
+
+      <NavLink
+        to="/Kambaz/Courses"
         id="wd-course-link"
-        className="list-group-item text-white
-               bg-black text-center border-0"
+        className={({ isActive }) =>
+          `list-group-item text-center border-0 ${isActive ? "bg-white text-danger" : "bg-black text-white"}`
+        }
       >
         <LiaBookSolid className="fs-1 text-danger" />
-        Courses{" "}
-      </Link>
-      {/* complete styling the rest of the links */}
+        <br />
+        Courses
+      </NavLink>
+
+      <NavLink
+        to="/Kambaz/Calendar"
+        id="wd-calendar-link"
+        className={({ isActive }) =>
+          `list-group-item text-center border-0 ${isActive ? "bg-white text-danger" : "bg-black text-white"}`
+        }
+      >
+        <FaCalendarAlt className="fs-1 text-danger" />
+        <br />
+        Calendar
+      </NavLink>
+
+      <NavLink
+        to="/Kambaz/Inbox"
+        id="wd-inbox-link"
+        className={({ isActive }) =>
+          `list-group-item text-center border-0 ${isActive ? "bg-white text-danger" : "bg-black text-white"}`
+        }
+      >
+        <FaInbox className="fs-1 text-danger" />
+        <br />
+        Inbox
+      </NavLink>
+
+      <NavLink
+        to="/Labs"
+        id="wd-labs-link"
+        className={({ isActive }) =>
+          `list-group-item text-center border-0 ${isActive ? "bg-white text-danger" : "bg-black text-white"}`
+        }
+      >
+        <IoSettingsOutline className="fs-1 text-danger" />
+        <br />
+        Labs
+      </NavLink>
     </div>
   );
 }
